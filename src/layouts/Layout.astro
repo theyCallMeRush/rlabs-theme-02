@@ -1,6 +1,7 @@
 ---
 import Footer from "../components/elements/Footer.astro";
 import Navbar from "../components/elements/Navbar.astro";
+import { GoogleAnalytics } from "astro-google-analytics";
 
 export interface Props {
   title: string;
@@ -12,6 +13,7 @@ const { title } = Astro.props;
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <GoogleAnalytics id="G-7L42S0PK35" />
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
